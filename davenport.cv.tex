@@ -1,10 +1,12 @@
 \documentclass{article}
 \usepackage{cv-jrad}
 
+% reverse-sorting numbered list
 \usepackage{etaremune}
-\usepackage{hyperref}
-
-\usepackage{color}
+% https://tex.stackexchange.com/a/12408
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
 
 \usepackage{calligra}
 
@@ -45,9 +47,9 @@ University of Washington\\
 Department of Astronomy\\
 Box 358510, Seattle WA, 98195
 }
-{jrad@uw.edu\\
-jradavenport.github.io\\
-ifweassume.com\\
+{ jrad@uw.edu\\
+\href{https://jradavenport.github.io}{\color{NavyBlue}jradavenport.github.io}\\
+\href{https://github.com/jradavenport/}{\color{NavyBlue}\faGithub} \href{https://twitter.com/jradavenport}{\color{NavyBlue}\faTwitter} \href{http://youtube.com/james-davenport}{\color{NavyBlue}\faYoutube} \href{http://www.linkedin.com/in/jradavenport}{\color{NavyBlue}\faLinkedin}
 %Citizenship: USA
 \normalsize
 }
@@ -59,23 +61,22 @@ ifweassume.com\\
 
 %%% Current JOB
 \sectiontitle{}
-\employer{Research Assistant Professor, Department of Astronomy\\Associate Director, DiRAC Institute}
-\location{}
+\employer{Research Assistant Professor, Department of Astronomy} \location{2020 -- Present} \href{https://dirac.astro.washington.edu}{\color{NavyBlue}{\sc Associate Director, DiRAC Institute}}\\
 University of Washington, Seattle, WA
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\sectiontitle{Postdoctoral\\Experience}
+%\sectiontitle{Postdoctoral\\Experience}
 
 \employer{Research Scientist}
 \location{2018 -- 2020}
 University of Washington, Seattle, WA
 
-\employer{DiRAC Institute Postdoctoral Fellow}
-\location{2017 -- 2018}
-University of Washington, Seattle, WA
+%\employer{DiRAC Institute Postdoctoral Fellow}
+%\location{2017 -- 2018}
+%University of Washington, Seattle, WA
 
 \employer{NSF Astronomy \& Astrophysics Postdoctoral Fellowship}
 \location{2015 -- 2018}
@@ -88,7 +89,7 @@ University of Washington, Seattle, WA
 \sectiontitle{Education}
 \employer{Ph.D. in Astronomy}
 \location{2015}
-{\it Thesis: \href{http://hdl.handle.net/1773/33558}{{\color{blue} Spots and Flares: Stellar Activity in the Time Domain Era}
+{\it Thesis: \href{http://hdl.handle.net/1773/33558}{{\color{NavyBlue} Spots and Flares: Stellar Activity in the Time Domain Era}
 }}\\
 {\sc M.S. in Astronomy} \hfill 2010\\
 University of Washington, Seattle, WA
@@ -117,8 +118,13 @@ University of Washington, Seattle, WA
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Teaching Experience
-\sectiontitle{Teaching\\Experience}
-{\sc Data Science Seminar Instructor (WWU)} \location{2016, 2018}
+\sectiontitle{Teaching\\Experience} 
+{\sc Instructor (UW)}\location{}
+\href{https://jradavenport.github.io/astr421wi22/}{\color{NavyBlue}ASTR421: Stellar Observation and Theory} \location{2022}
+\href{https://jradavenport.github.io/astr511wi23/}{\color{NavyBlue}ASTR511: Galactic Astronomy} \location{2023}
+
+\vspace{-0.2in}
+{\sc \href{https://github.com/jradavenport/WWU-seminar-2018}{\color{NavyBlue}Data Science Seminar Instructor (WWU)}} \location{2016, 2018}
 {\sc Student Instructor (UW)} \location{2010, 2011}
 %Created and taught IDL programming technique class for upper level undergraduates.\\
 {\sc Teaching Assistant (UW)} \location{2005 -- 2007, 2010 -- 2013}
@@ -130,31 +136,32 @@ University of Washington, Seattle, WA
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\sectiontitle{Honors}
-{\sc \href{http://rescorp.org/scialog/time-domain-astrophysics}{\color{blue}Scialog Fellow}} \location{2018, 2019}
-{\sc NSF Astronomy \& Astrophysics Postdoctoral Fellowship} 
-\location{2015 -- 2018}
-{\sc AAS 225 Rodger Doxsey Travel Prize}
-\location{2015}
-{\sc AAS Chambliss Poster Award} (Honorable Mention)
-\location{2011, 2012}
-{\sc Cliff E. Smith \& Ruth Kinnell Graduate Fellowship (SDSU)}
-\location{2008 -- 2009}
-{\sc Awona Harrington Astronomy Scholarship (SDSU)}
-\location{2008}
-{\sc John Baer Prize (UW)}
-\location{2006}
-{\sc Masonic Tribute Award}
-\location{2002}
+%\sectiontitle{Honors}
+%{\sc NSF Astronomy \& Astrophysics Postdoctoral Fellowship} 
+%\location{2015 -- 2018}
+%{\sc AAS 225 Rodger Doxsey Travel Prize}
+%\location{2015}
+%{\sc AAS Chambliss Poster Award} (Honorable Mention)
+%\location{2011, 2012}
+%{\sc Cliff E. Smith \& Ruth Kinnell Graduate Fellowship (SDSU)}
+%\location{2008 -- 2009}
+%{\sc Awona Harrington Astronomy Scholarship (SDSU)}
+%\location{2008}
+%{\sc John Baer Prize (UW)}
+%\location{2006}
+%{\sc Masonic Tribute Award}
+%\location{2002}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \sectiontitle{Professional\\Affiliations}
+{\sc Adjunct Professor}, \href{https://dxarts.washington.edu/people/adjunct-faculty}{\color{NavyBlue}DXARTS} (UW) \location{2021 -- Present}
 LSSTC Board Institutional Rep\location{2020 -- Present}
+{\sc \href{http://rescorp.org/scialog/time-domain-astrophysics}{\color{NavyBlue}Scialog Fellow}} \location{2018, 2019}
 NExSS Steering Committee Member\location{2018 -- Present}
-{\sc ISSI Meeting}: \href{http://www.issibern.ch/program/teams.html#Teams2016}{\color{blue}Quasi-periodic Pulsations in Stellar Flares} (Bern, Switzerland)\location{2016 -- 2017}
-{\sc \href{http://www.noao.edu/meetings/lsst-oir-study-meeting/}{\color{blue}Kavli Workshop on Maximizing Science in the Era of LSST}} (Tucson, AZ) \location{2016}
+{\sc ISSI Meeting}: \href{http://www.issibern.ch/program/teams.html#Teams2016}{\color{NavyBlue}Quasi-periodic Pulsations in Stellar Flares} (Bern, Switzerland)\location{2016 -- 2017}
+{\sc \href{http://www.noao.edu/meetings/lsst-oir-study-meeting/}{\color{NavyBlue}Kavli Workshop on Maximizing Science in the Era of LSST}} (Tucson, AZ) \location{2016}
 {\sc Large Synoptic Survey Telescope} \location{2009 -- Present}
 {\sc Sloan Digital Sky Survey collaboration} \location{2007 -- Present}
 {\sc American Astronomical Society} \location{2006 -- Present}
@@ -209,35 +216,15 @@ NExSS Steering Committee Member\location{2018 -- Present}
 
 
 %%%%%%%%%%%%%%%%%
-\sectiontitle{Invited \\Talks}
-Seminar, University of Delaware \location{2021}
-Colloquium, University of Washington \href{https://www.youtube.com/watch?v=X6r9fvRcgo4}{\color{blue}\bf{video}} \location{2019}
-GeekWire Summit (Seattle, WA) \href{https://www.youtube.com/watch?v=mG9h1gHb4N4}{\color{blue}\bf{video}} \location{2018}
-Colloquium, Lowell Observatory \location{2018}
-CEHW Seminar, The Pennsylvania State University \location{2017}
-Colloquium, University of Texas at Austin \location{2017}
-Colloquium, University of British Columbia \location{2017}
-Invited Speaker, Northwest Astronomers Meeting \location{2016}
-Data Visualization in Python, Code Fellows (Seattle, WA) \location{2016}
-Invited Splinter Talk, Cool Stars 19 Flares Splinter (Uppsala, Sweden) \href{https://www.youtube.com/watch?v=3SDwC7tTCSQ}{\color{blue}\bf{video}} \location{2016}
-Colloquium, High Altitude Observatory, UCAR (Boulder, CO) \href{https://www.youtube.com/watch?v=Gf7jsYA6oJ8}{\color{blue}\bf{video}}\location{2015}
-Colloquium, Dept. of Physics \& Astronomy, WWU (Bellingham, WA)\location{2015}
-Astronomy of Tap Seattle V \location{2015}
-Workshop, Data Science Training for Librarians (Harvard) \location{2015}
-Data Visualization in Python, Code Fellows (Seattle, WA) \location{2014}
-Keynote, Thinking with your Eyes (Harvard) \href{https://www.youtube.com/watch?v=kmSr60TmNFg}{\color{blue}\bf{video}} \location{2014} 
-``Seattle NerdNite'' 20 \href{https://vimeo.com/78773806}{\color{blue}\bf{video}}\location{2013}
-``Seattle Ignite!'' 19 \href{http://www.youtube.com/watch?v=vINb5GCtDR8}{\color{blue} \bf{video}}\location{2013}
-
-
-%\blfootnote{{\sc References available upon request}}
-
-
-
-%%%%%%%%%%%%%%%%%
 \sectiontitle{Recent \\Awards \& \\ Funding}
 
-NASA TESS Cycle 3 (\$40,000) \href{https://heasarc.gsfc.nasa.gov/docs/tess/approved-programs.html#cycle-3}{\color{blue} GO 3227}\location{2020}
+NASA TESS Cycle 5 (\$50,000) \href{https://heasarc.gsfc.nasa.gov/docs/tess/approved-programs.html#cycle-5}{\color{NavyBlue} GO 5105}\location{2022}
+``Characterizing Activity Cycles with Flares from TESS'' (P-I: {\bf J. Davenport})
+
+UW Student Tech Fee (\$1158) Proposal \#2021-58 \location{2021}
+``Building a UW Global Meteor Network Station''
+
+NASA TESS Cycle 3 (\$40,000) \href{https://heasarc.gsfc.nasa.gov/docs/tess/approved-programs-em1.html#cycle-3}{\color{NavyBlue} GO 3227}\location{2020}
 ``Detecting Activity Cycles Using Stellar Flares'' (P-I: {\bf J. Davenport})
 
 NASA TESS Directors Discretionary Time (DDT 009) \location{2020}
@@ -249,7 +236,7 @@ Heising-Simons Foundation, Scialog (\$50,000) \location{2019}
 NASA TESS Cycle 2 (\$200,000) \location{2019}
 ``Measuring Long Rotation Periods from TESS's Short Light Curves'' (P-I: R. Angus)
 
-NASA TESS Cycle 1 (\$50,000) \location{2018}
+NASA TESS Cycle 1 (\$50,000) \href{https://heasarc.gsfc.nasa.gov/docs/tess/approved-programs-primary.html#cycle-1}{\color{NavyBlue} GO 11264}  \location{2018}
 ``Superflare Rates in GKM Stars with TESS'' (P-I: {\bf J. Davenport})
 
 NASA TESS Cycle 1 (\$50,000) \location{2018}
@@ -258,7 +245,7 @@ NASA TESS Cycle 1 (\$50,000) \location{2018}
 NASA ADAP (\$211,732) \location{2017}
 ``Measuring Stellar Rotation with K2'' (P-I: {\bf J. Davenport})
 
-NASA K2 Cycle 5 \href{https://keplergo.arc.nasa.gov/data/k2-programs/GO14001.txt}{\color{blue}GO14001} \location{2017}
+NASA K2 Cycle 5 \href{https://keplergo.arc.nasa.gov/data/k2-programs/GO14001.txt}{\color{NavyBlue}GO14001} \location{2017}
 ``Gyrochronology and Magnetic Activity in Wide Binaries with K2'' (P-I: {\bf J. Davenport})
 
 
@@ -302,18 +289,57 @@ NSF Astronomy \& Astrophysics Postdoctoral Fellowship (\$278,000) \location{2015
 %Optical imaging and long-slit spectroscopy on various projects.
 
 
+
+%%%%%%%%%%%%%%%%%
+\sectiontitle{Invited \\Talks}
+``Boom!'' (Urbana-Champaign, IL) \href{https://www.youtube.com/watch?v=tbq0EVyrPT4}{\color{NavyBlue}\bf{video}} \location{2022}%JULY
+%https://boom.web.illinois.edu
+Invited Talk, Breakthrough Discuss (Santa Cruz, CA) \href{https://www.youtube.com/watch?v=oqFae-n8lJI}{\color{NavyBlue}\bf{video}} \location{2022}
+%https://breakthroughinitiatives.org/initiative/5/discuss2022
+CEHW Seminar, The Pennsylvania State University \location{2022} %April 28
+Colloquium, University of California San Diego \& San Diego State University \location{2021}
+%    https://casswww.ucsd.edu/index.php/seminars:2021
+Colloquium, University of British Columbia \location{2021}
+%https://phas.ubc.ca/10-years-stellar-activity-space
+Seminar, University of Delaware \location{2021}
+Colloquium, University of Washington \href{https://www.youtube.com/watch?v=X6r9fvRcgo4}{\color{NavyBlue}\bf{video}} \location{2019}
+GeekWire Summit (Seattle, WA) \href{https://www.youtube.com/watch?v=mG9h1gHb4N4}{\color{NavyBlue}\bf{video}} \location{2018}
+Colloquium, Lowell Observatory \location{2018}
+CEHW Seminar, The Pennsylvania State University \location{2017}
+Colloquium, University of Texas at Austin \location{2017}
+Colloquium, University of British Columbia \location{2017}
+Invited Speaker, Northwest Astronomers Meeting \location{2016}
+Data Visualization in Python, Code Fellows (Seattle, WA) \location{2016}
+Invited Splinter Talk, Cool Stars 19 Flares Splinter (Uppsala, Sweden) \href{https://www.youtube.com/watch?v=3SDwC7tTCSQ}{\color{NavyBlue}\bf{video}} \location{2016}
+Colloquium, High Altitude Observatory, UCAR (Boulder, CO) \href{https://www.youtube.com/watch?v=Gf7jsYA6oJ8}{\color{NavyBlue}\bf{video}}\location{2015}
+Colloquium, Dept. of Physics \& Astronomy, WWU (Bellingham, WA)\location{2015}
+%Astronomy of Tap Seattle V \location{2015}
+Workshop, Data Science Training for Librarians (Harvard) \location{2015}
+Data Visualization in Python, Code Fellows (Seattle, WA) \location{2014}
+Keynote, Thinking with your Eyes (Harvard) \href{https://www.youtube.com/watch?v=kmSr60TmNFg}{\color{NavyBlue}\bf{video}} \location{2014} 
+``Seattle NerdNite'' 20 \href{https://vimeo.com/78773806}{\color{NavyBlue}\bf{video}}\location{2013}
+``Seattle Ignite!'' 19 \href{http://www.youtube.com/watch?v=vINb5GCtDR8}{\color{NavyBlue} \bf{video}}\location{2013}
+
+
+
+
+%\clearpage
+
 %%%%%%%%%%%%%%%%%
 \sectiontitle{Media \\ \& Public \\ Engagement}
 
-\href{https://www.washington.edu/news/2021/01/14/hs-hydra/}{\color{blue}UW Press Release} based on my AAS 237 presentation on HS Hydrae\location{2021}
+{\bf {\large \href{https://jradavenport.github.io/media/}{\color{NavyBlue} An up to date list of media coverage is available on my website.}}}
 
-My AAS 235 talk on stellar astrophysics with TESS was covered by \href{https://www.space.com/tess-exoplanet-mission-studying-stars-too.html}{\color{blue}SPACE.com} \location{2020}
+%\href{https://www.washington.edu/news/2021/01/14/hs-hydra/}{\color{NavyBlue}UW Press Release} based on my AAS 237 presentation on HS Hydrae%\location{2021}
+%
+%My AAS 235 talk on stellar astrophysics with TESS was covered by \href{https://www.space.com/tess-exoplanet-mission-studying-stars-too.html}{\color{NavyBlue}SPACE.com} %\location{2020}
+%
+%Results from Flares on Proxima Centauri have been reported on by \href{http://www.pbs.org/newshour/rundown/earth-like-planet-orbits-suns-nearest-neighbor-every-11-days/}{\color{NavyBlue}PBS},%\location{2016}
+%\href{https://www.scientificamerican.com/article/the-earth-next-door/}{\color{NavyBlue}Scientific American}, and others.
 
-Results from Flares on Proxima Centauri have been reported on by \href{http://www.pbs.org/newshour/rundown/earth-like-planet-orbits-suns-nearest-neighbor-every-11-days/}{\color{blue}PBS},\location{2016}
-\href{https://www.scientificamerican.com/article/the-earth-next-door/}{\color{blue}Scientific American}, and others.
-
-My science and data visualization blog, \href{http://www.ifweassume.com}{\color{blue}\bf{ifweassume.com}}, has received\location{2012 -- Present}
-over 2 million views. Featured data analysis projects including \\ \href{http://www.ifweassume.blogspot.com/2013/06/airports-of-world.html}{\color{blue}\bf{Airports of the World}} and \href{http://www.ifweassume.blogspot.com/2012/10/the-united-states-of-starbucks.html}{\color{blue}\bf{The United States of Starbucks}}, have\\ resulted in international media coverage.
+My science and data visualization blog, \href{http://www.ifweassume.com}{\color{NavyBlue}\bf{ifweassume.com}}, has received %\location{2012 -- Present}
+over 2 million views. \\
+Featured data analysis projects including \href{http://www.ifweassume.blogspot.com/2013/06/airports-of-world.html}{\color{NavyBlue}\bf{Airports of the World}} and \\ \href{http://www.ifweassume.blogspot.com/2012/10/the-united-states-of-starbucks.html}{\color{NavyBlue}\bf{The United States of Starbucks}}, have resulted in international media coverage.
 
 
 \setlength{\topmargin}{-0.35in}
@@ -321,12 +347,16 @@ over 2 million views. Featured data analysis projects including \\ \href{http://
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Service & Outreach
 \sectiontitle{Service \&\\Outreach}
+{\sc LSSTC Catalyst Fellowship ``Ideas Lab'' Chair}\location{2021 -- Present}
+{\sc LSSTC Catalyst Fellowship Steering Committee}\location{2021 -- Present}
+{\sc LSSTC Member Institution Representative}\location{2021--Present}
+{\sc \href{http://seti.news}{\color{NavyBlue}SETI.news} monthly newsletter editor}\location{2016 -- Present}
 {\sc Cool Stars 20.5, LOC -- GatherTown Organizer}\location{2021}
-{\sc Gaia/TESS Satellite Sprint Organizer}\location{2018, 2019}
+{\sc Gaia/TESS Sprint Organizer}\location{2018 -- Present}
 {\sc Northwest x Southwest Astronomers Meeting 2018 SOC} \location{2018}
 {\sc SPARCS Systems Requirements Review Panel} (ASU) \location{2018, 2019}
-{\sc NASA Grant Review Panel}\location{}
-{\sc NSF Grant Review Panel}\location{}
+{\sc NASA Grant Review Panels}\location{}
+{\sc NSF Grant Review Panels}\location{}
 {\sc AAS Agents Program} (WWU) \location{}
 {\sc AAS Chambliss Poster Judge}\location{}
 {\sc Journal Referee (ApJ, ApJS, ApJL, AJ, MNRAS, A\&A, RMxAA, JAAVSO)}\location{}
@@ -339,8 +369,8 @@ over 2 million views. Featured data analysis projects including \\ \href{http://
 {\sc APO--UW Time Allocation Committee } \location{2012 -- 2014}
 {\sc Graduate \& Professional Student Library Advisory Committee (UW)} \location{2012 -- 2014}
 {\sc Speaker (Everett Astro. Soc.,  Seattle Astro. Soc.)}\location{2013}
-%{\sc \href{https://vimeo.com/78773806}{\color{blue} Speaker (Seattle Nerd Nite)}} \location{July 2013}
-%{\sc \href{http://www.youtube.com/watch?v=vINb5GCtDR8}{\color{blue} Speaker (Seattle Ignite! 19)}}\location{Feb 2013}
+%{\sc \href{https://vimeo.com/78773806}{\color{NavyBlue} Speaker (Seattle Nerd Nite)}} \location{July 2013}
+%{\sc \href{http://www.youtube.com/watch?v=vINb5GCtDR8}{\color{NavyBlue} Speaker (Seattle Ignite! 19)}}\location{Feb 2013}
 {\sc Astro Admissions Committee Grad Representative (UW)} \location{2011 -- 2012}
 {\sc Cool Stars 16 LOC (UW)} \location{2010}
 {\sc Science Olympiad Tutor (Aviation High School, Seattle)} \location{2006}
@@ -374,114 +404,129 @@ over 2 million views. Featured data analysis projects including \\ \href{http://
 
 \begin{etaremune}[leftmargin=10pt]
 
+% 2022
+% the year is flying by... need to write this up!
+%\item {\sc The PyKOSMOS Spectroscopic Reduction Suite}\\
+%{\bf Davenport, J.R.A.}, et~al. {\em in prep}
+%
+%\item {\sc Where the Eclipsing Things Are: Prioritizing Eclipsing Binaries Across the H-R Diagram}\\
+%{\bf Davenport, J.R.A.}, et~al. {\em in prep}
+
+
+% my spring break paper!
+\item {\sc \href{https://arxiv.org/abs/2206.04092}{\color{NavyBlue}Searching the SETI Ellipsoid with Gaia}}\\
+{\bf Davenport, J.R.A.}, et~al. {\em ApJ In Press} (2022)
+
+
 % 2021
+% half of year w/ pandemic still... half trying to put professional life back together
 
-\item{\sc The Rise and Fall of the Eclipsing Binary, HS Hydrae}\\
-{\bf Davenport, J.R.A.}, et~al. {\em AJ submitted}
+\item{\sc \href{https://arxiv.org/abs/2107.10954}{\color{NavyBlue}The Rise and Fall of the Eclipsing Binary, HS Hydrae}}\\
+{\bf Davenport, J.R.A.}, et~al. {\em AJ} 162, 189 (2021)
 
-% COVID-19 Global pandemic.... 
 % 2020
+% COVID-19 Global pandemic....  not a ton of research being done.
 
-\item{\sc \href{https://arxiv.org/abs/2005.10281}{\color{blue}10 Years of Stellar Activity for GJ 1243}}\\
+\item{\sc \href{https://arxiv.org/abs/2005.10281}{\color{NavyBlue}10 Years of Stellar Activity for GJ 1243}}\\
 {\bf Davenport, J.R.A.}, Tovar Mendoza, G., Hawley, S.~L. {\em AJ }, 160, 36 (2020)
 
 
 % 2019
 
-\item{\sc \href{https://arxiv.org/abs/1907.04443}{\color{blue}SETI in the Spatial-Temporal Survey Domain}}\\
+\item{\sc \href{https://arxiv.org/abs/1907.04443}{\color{NavyBlue}SETI in the Spatio-Temporal Survey Domain}}\\
 {\bf Davenport, J.R.A.} arXiv \# 1907.04443 (2019)
 
 
-\item{\sc{\href{https://doi.org/10.3847/2515-5172/ab11c9}{\color{blue}{Photometric Metallicities for Low-Mass Stars with Gaia and WISE}}}}\\
+\item{\sc{\href{https://doi.org/10.3847/2515-5172/ab11c9}{\color{NavyBlue}{Photometric Metallicities for Low-Mass Stars with Gaia and WISE}}}}\\
 {\bf Davenport, J.R.A.}, Dorn-Wallenstein, T.Z. {\em RNAAS}, 3, 3, (2019)
 
 
-\item{\sc \href{https://arxiv.org/abs/1901.00890}{\color{blue}The Evolution of Flare Activity with Stellar Age}}\\
+\item{\sc \href{https://arxiv.org/abs/1901.00890}{\color{NavyBlue}The Evolution of Flare Activity with Stellar Age}}\\
 {\bf Davenport, J.R.A.} et~al.  {\em ApJ} 871, 241 (2019)
 
 % 2018
-\item{\sc \href{https://arxiv.org/abs/1807.09841}{\color{blue} Rotating Stars from Kepler Observed with Gaia DR2}}\\
+\item{\sc \href{https://arxiv.org/abs/1807.09841}{\color{NavyBlue} Rotating Stars from Kepler Observed with Gaia DR2}}\\
 {\bf Davenport, J.R.A.} \& Covey, K. R., {\em ApJ} 868, 151 (2018)
 
 
-\item{\sc \href{https://arxiv.org/abs/1712.04948}{\color{blue}The GALEX View of ``Boyajian's Star'' (KIC 8462852)}}\\
+\item{\sc \href{https://arxiv.org/abs/1712.04948}{\color{NavyBlue}The GALEX View of ``Boyajian's Star'' (KIC 8462852)}}\\
 {\bf Davenport, J.R.A.} et~al. {\em ApJ} 853, 130 (2018)
 
 %2017
 
-\item{\sc \href{https://arxiv.org/abs/1610.08563}{\color{blue} Rotating Stars from Kepler Observed in Gaia DR1}}\\
+\item{\sc \href{https://arxiv.org/abs/1610.08563}{\color{NavyBlue} Rotating Stars from Kepler Observed in Gaia DR1}}\\
 {\bf Davenport, J.R.A.}{\em ApJ} 835, 16 (2017)
 
-\item{\href{http://adsabs.harvard.edu/abs/2017arXiv171009468D}{\color{blue}{\sc Infrared Flares from M Dwarfs: a Hinderance to Future Transiting Exoplanet Studies}}}\\
-{\bf Davenport, J.R.A.}, {\em RNAAS}, 1, 1 (2017)
+\item{\href{http://adsabs.harvard.edu/abs/2017arXiv171009468D}{\color{NavyBlue}{\sc Infrared Flares from M Dwarfs: a Hinderance to Future Transiting Exoplanet Studies}}}\\
+{\bf Davenport, J.R.A.}, {\em RNAAS}, 1, 2 (2017)
 
 % 2016
 
-\item{\sc \href{http://arxiv.org/abs/1608.06672}{\color{blue} $MOST$ Observations of our Nearest Neighbor: Flares on Proxima Centauri}}\\
+\item{\sc \href{http://arxiv.org/abs/1608.06672}{\color{NavyBlue} $MOST$ Observations of our Nearest Neighbor: Flares on Proxima Centauri}}\\
 {\bf Davenport, J.R.A.}, Kipping, D.M., et~al., {\em ApJ} 829L, 31 (2016)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2016ApJ...829...23D}{\color{blue}The Kepler Catalog of Stellar Flares}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2016ApJ...829...23D}{\color{NavyBlue}The Kepler Catalog of Stellar Flares}}\\
 {\bf Davenport, J.R.A.} {\em ApJ}, 829, 23 (2016)
 
-\item\href{http://dx.doi.org/10.5281/zenodo.60308}{\color{blue}{\sc Searching for ``Tabby's Star'' Analogs in Stripe 82}}\\
+\item\href{http://dx.doi.org/10.5281/zenodo.60308}{\color{NavyBlue}{\sc Searching for ``Tabby's Star'' Analogs in Stripe 82}}\\
 {\bf Davenport, J.R.A.} \& Ruan, J. J. (2016), The Journal of Brief Ideas
 
 % 2015
 
-\item{\sc \href{http://arxiv.org/abs/1505.01524}{\color{blue} Measuring Differential Rotation \& Starspot Evolution on the M Dwarf \\GJ 1243 with Kepler}}\\
+\item{\sc \href{http://arxiv.org/abs/1505.01524}{\color{NavyBlue} Measuring Differential Rotation \& Starspot Evolution on the M Dwarf \\GJ 1243 with Kepler}}\\
 {\bf Davenport, J.R.A.} et~al. {\em ApJ}, 806, 212 (2015)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2015ApJ...803....2D}{\color{blue}SDSSJ14584479+3720215: A Benchmark JHK$_s$ Blazar Light Curve from the\\ 2MASS Calibration Scans}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2015ApJ...803....2D}{\color{NavyBlue}SDSSJ14584479+3720215: A Benchmark JHK$_s$ Blazar Light Curve from the\\ 2MASS Calibration Scans}}\\
 {\bf Davenport, J.R.A.}, Ruan, J.J., et~al., {\em ApJ}, 803, 2 (2015)
 
-\item\href{http://dx.doi.org/10.5281/zenodo.14841}{\color{blue}{\sc The Galactic Astigmatism: Constraining the Milky Way Dark Matter Halo\\ Using Ultra-Weak Lensing}}\\
+\item\href{http://dx.doi.org/10.5281/zenodo.14841}{\color{NavyBlue}{\sc The Galactic Astigmatism: Constraining the Milky Way Dark Matter Halo\\ Using Ultra-Weak Lensing}}\\
 {\bf Davenport, J.R.A.} (2015), The Journal of Brief Ideas
 
 % 2014
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2014ApJ...797..122D}{\color{blue}Kepler Flares II: The Temporal Morphology of White-Light Flares on GJ 1243}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2014ApJ...797..122D}{\color{NavyBlue}Kepler Flares II: The Temporal Morphology of White-Light Flares on GJ 1243}}\\
 {\bf Davenport, J.R.A.} et~al.,  {\em ApJ}, 797, 122 (2014)
 
-\item\href{http://arxiv.org/abs/1403.3091}{\color{blue}{\sc Studying Gender in Conference Talks -- data from the 223rd meeting of the\\ American Astronomical Society}}\\
+\item\href{http://arxiv.org/abs/1403.3091}{\color{NavyBlue}{\sc Studying Gender in Conference Talks -- data from the 223rd meeting of the\\ American Astronomical Society}}\\
 {\bf Davenport, J.R.A.}, et~al.  (2014), arXiv \#1403.3091
 
 
-\item\href{http://arxiv.org/abs/1401.6058}{\color{blue}{\sc The Readability of Tweets and their Geographic Correlation with Education}}\\
+\item\href{http://arxiv.org/abs/1401.6058}{\color{NavyBlue}{\sc The Readability of Tweets and their Geographic Correlation with Education}}\\
 {\bf Davenport, J.R.A.} \& DeLine, R. (2014), arXiv \#1401.6058
 
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2014MNRAS.440.3430D}{\color{blue}The SDSS--2MASS--WISE 10 Dimensional Stellar Color Locus}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2014MNRAS.440.3430D}{\color{NavyBlue}The SDSS--2MASS--WISE 10 Dimensional Stellar Color Locus}}\\
 {\bf Davenport, J.R.A.}, et~al., {\em MNRAS}, 440, 3430 (2014)
 
 % 2013
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2013ApJ...764...62D}{\color{blue}The Very Short Period M Dwarf Binary SDSS J001641--000925}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2013ApJ...764...62D}{\color{NavyBlue}The Very Short Period M Dwarf Binary SDSS J001641--000925}}\\
 {\bf Davenport, J.R.A.}, et~al., {\em ApJ}, 764, 62 (2013)
 
-\item\href{http://arxiv.org/abs/1303.7433}{\color{blue}{\sc Unidentified Moving Objects in Next Generation Time Domain Surveys}}\\
+\item\href{http://arxiv.org/abs/1303.7433}{\color{NavyBlue}{\sc Unidentified Moving Objects in Next Generation Time Domain Surveys}}\\
 {\bf Davenport, J.R.A.}, (2013) arXiv \#1303.7433
 
-\item\href{http://physicsworld.com/cws/article/print/2013/feb/14/visible-improvements}{\color{blue}{\sc Visible Improvements,}} Review of {\it Visual Strategies: a Practical Guide for Scientists and Engineers} {\bf Davenport, J.R.A.},  Physics World, February 2013
+\item\href{http://physicsworld.com/cws/article/print/2013/feb/14/visible-improvements}{\color{NavyBlue}{\sc Visible Improvements,}} Review of {\it Visual Strategies: a Practical Guide for Scientists and Engineers} {\bf Davenport, J.R.A.},  Physics World, February 2013
 
 % 2012
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2012ApJ...748...58D}{\color{blue}Multi-wavelength characterization of stellar flares on low-mass stars using \\SDSS and 2MASS time domain surveys}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2012ApJ...748...58D}{\color{NavyBlue}Multi-wavelength characterization of stellar flares on low-mass stars using \\SDSS and 2MASS time domain surveys}}\\
 {\bf Davenport, J.R.A.}, et~al. {\em ApJ}, 748, 58 (2012)
 
 % 2011
 % 2010
-\item{\sc \href{http://adsabs.harvard.edu/abs/2010ApJ...711..559D}{\color{blue}Death of a cluster: the destruction of M67 as seen by the SDSS}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2010ApJ...711..559D}{\color{NavyBlue}Death of a cluster: the destruction of M67 as seen by the SDSS}}\\
 {\bf Davenport, J.R.A.} \& Sandquist, E. L, {\em ApJ}, 711, 559 (2010)
 
 % 2009
 % 2008
 % 2007
 
- \item{\sc \href{http://adsabs.harvard.edu/abs/2007AJ....134.2430D}{\color{blue}Improved Photometric Calibrations for Red Stars Observed with the SDSS \\Photometric Telescope}}\\
+ \item{\sc \href{http://adsabs.harvard.edu/abs/2007AJ....134.2430D}{\color{NavyBlue}Improved Photometric Calibrations for Red Stars Observed with the SDSS \\Photometric Telescope}}\\
 {\bf Davenport, J.R.A.}, Bochanski, Covey, Hawley, West, Schneider, {\em AJ}, 134, 2430 (2007)
  
  % 2006
-\item{\sc \href{http://adsabs.harvard.edu/abs/2006PASP..118.1679D}{\color{blue}Sloan/Johnson-Cousins/2MASS Color Transformations for Cool Stars}}\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2006PASP..118.1679D}{\color{NavyBlue}Sloan/Johnson-Cousins/2MASS Color Transformations for Cool Stars}}\\
 {\bf Davenport, J.R.A.}, West, A. A., et~al., {\em PASP}, 118, 850 (2006)
 \end{etaremune}
 
@@ -495,207 +540,247 @@ over 2 million views. Featured data analysis projects including \\ \href{http://
 %%% %%%    CO-AUTHOR PAPERS     %%%%%%
 \sectiontitle{Co--Author\\Publications}
 \begin{etaremune}[leftmargin=10pt]
-%\item{\sc{\href{URL}{\color{blue} TITLE }\\
+%\item{\sc{\href{URL}{\color{NavyBlue} TITLE }\\
 %AUTHORS
 
 
+%%% 2022
+%\item{\sc The Changing Inclinations of Eight Eclipsing Binaries as Observed by KELT \& TESS}\\
+%Baum, A. C., Pepper, J., \& {\bf Davenport,  J.R.A.} {\em in prep}
+%
+%\item{\sc Discovery of the Deepest and Longest Known Stellar Eclipse}\\
+%Tzanidakis, A., {\bf Davenport,  J.R.A.}, et~al. {\em in prep}
+%
+%\item{\sc Detection and Characterization of Anomalous Transits in Kepler Lightcurves}\\
+%Zuckerman, A, {\bf Davenport,  J.R.A.}, et~al. {\em in prep}
+
+
+\item{\sc \href{https://arxiv.org/abs/2206.11917}{\color{NavyBlue}The Properties of Fast Yellow Pulsating Supergiants: FYPS Point the Way to Missing Red Supergiants}}\\
+Dorn-Wallenstein, T. Z. {\bf et~al.} {\em AJ submitted}
+
+
+\item{\sc  \href{https://arxiv.org/abs/2208.04499}{\color{NavyBlue}Rubin Observatory LSST Transients and Variable Stars Roadmap}}\\
+Hambleton, K. M. {\bf et~al.}  arXiv \# 2208.04499 (2022)
+
+\item{\sc  \href{https://arxiv.org/abs/2208.02781}{\color{NavyBlue}Whitepaper: From Data to Software to Science with the Rubin Observatory LSST}}\\
+O'Mullane, W. {\bf et~al.}  arXiv \# 2208.02781 (2022)
+
+
+
+\item {\sc \href{https://arxiv.org/abs/2205.05706}{\color{NavyBlue}Llamaradas Estelares: Modeling the Morphology of White-Light Flares}}\\
+Tovar Mendoza, G., {\bf Davenport,  J.R.A.}, et~al. {\em AJ in press} (2022)
+
+\item {\sc \href{https://iopscience.iop.org/article/10.3847/2515-5172/ac6e42}{\color{NavyBlue}370 New Eclipsing Binary Candidates from TESS Sectors 1-26}}\\
+Howard, E. L., {\bf Davenport,  J.R.A.}, \& Covey, K. R. {\em RNAAS} 6, 96  (2022)
+
+\item{\sc \href{https://ui.adsabs.harvard.edu/abs/2022arXiv220109905R/abstract}{\color{NavyBlue} Final Report for SAG 21: The Effect of Stellar Contamination on Space-based Transmission Spectroscopy}}\\
+Rackham, B. V., {\bf et~al.}  arXiv \# 2201.09905 (2022)
+
+
+
 %%% 2021
+\item{\sc \href{https://arxiv.org/abs/2108.04753}{\color{NavyBlue} Simultaneous Multiwavelength Flare Observations of EV Lacertae}}\\
+Paudel, R.~R. {\bf et~al.} {\em ApJ} 922, 31 (2021)
 
 
-\item{\sc \href{https://arxiv.org/abs/2105.08795}{\color{blue} How to organize an online conference -- Lessons learned from Cool Stars 20.5 (virtually cool)}}\\
-G\"{u}nther, H. M. {\bf Davenport,  J.R.A.}, et~al. arXiv \# 2105.08795
 
-\item{\sc \href{https://arxiv.org/abs/2102.02829}{\color{blue} Photometric Classifications of Evolved Massive Stars: Preparing for the Era of Webb and Roman with Machine Learning}}\\
-Dorn-Wallenstein, T. Z., {\bf Davenport,  J.R.A.}, et~al.  {\em ApJ in press}
+\item{\sc \href{https://arxiv.org/abs/2108.01917}{\color{NavyBlue} Giant white-light flares on fully convective stars occur at high latitudes}}\\
+Ilin, E., {\bf et~al.} {\em MNRAS} 507, 1723 (2021)
 
-\item{\sc \href{https://arxiv.org/abs/2101.07886}{\color{blue} Stellar Rotation in the K2 Sample: Evidence for Broken Spindown}}\\
-Gordon, A. A., {\bf Davenport,  J.R.A.}, et~al.  {\em ApJ submitted}
+\item{\sc \href{https://arxiv.org/abs/2105.08795}{\color{NavyBlue} How to organize an online conference -- Lessons learned from Cool Stars 20.5 (virtually cool)}}\\
+G\"{u}nther, H. M. {\bf Davenport,  J.R.A.}, et~al. arXiv \# 2105.08795 (2021)
 
-\item{\sc \href{https://arxiv.org/abs/2010.05576}{\color{blue} Flares in Open Clusters with K2. II. Pleiades, Hyades, Praesepe, Ruprecht 147, and M67}}\\
+\item{\sc \href{https://arxiv.org/abs/2102.02829}{\color{NavyBlue} Photometric Classifications of Evolved Massive Stars: Preparing for the Era of Webb and Roman with Machine Learning}}\\
+Dorn-Wallenstein, T. Z., {\bf Davenport,  J.R.A.}, et~al.  {\em ApJ} 913, 32 (2021)
+
+\item{\sc \href{https://arxiv.org/abs/2101.07886}{\color{NavyBlue} Stellar Rotation in the K2 Sample: Evidence for Broken Spindown}}\\
+Gordon, A. A., {\bf Davenport,  J.R.A.}, et~al.  {\em ApJ} 913, 70 (2021)
+
+\item{\sc \href{https://arxiv.org/abs/2010.05576}{\color{NavyBlue} Flares in Open Clusters with K2. II. Pleiades, Hyades, Praesepe, Ruprecht 147, and M67}}\\
 Ilin, E., {\bf et~al.} {\em A\&A} 645, A42 (2021)
 
 
 %%% 2020
-\item{\sc \href{https://arxiv.org/abs/2008.11723}{\color{blue} Short Term Variability of Evolved Massive Stars with TESS II: A New Class of Cool, Pulsating Supergiants }}\\
+\item{\sc \href{https://arxiv.org/abs/2008.11723}{\color{NavyBlue} Short Term Variability of Evolved Massive Stars with TESS II: A New Class of Cool, Pulsating Supergiants }}\\
 Dorn-Wallenstein, T. Z., {\bf et~al.} {\em ApJ} 902, 24 (2020)
 
-\item{\sc \href{https://iopscience.iop.org/article/10.3847/2515-5172/ab98f4}{\color{blue} Deconfusing the Confusogram: Getting New Insights from Zeeman Doppler Imaging}}\\
+\item{\sc \href{https://iopscience.iop.org/article/10.3847/2515-5172/ab98f4}{\color{NavyBlue} Deconfusing the Confusogram: Getting New Insights from Zeeman Doppler Imaging}}\\
 Sebastian Pineda, J. \& {\bf Davenport,  J.R.A.} {\em RNAAS} 4, 6 (2020)
 
-\item{\sc \href{https://ui.adsabs.harvard.edu/abs/2020ApJ...891..103N}{\color{blue} Temporal Evolution of Spatially Resolved Individual Star Spots on a Planet-hosting Solar-type Star: Kepler-17}}\\
+\item{\sc \href{https://ui.adsabs.harvard.edu/abs/2020ApJ...891..103N}{\color{NavyBlue} Temporal Evolution of Spatially Resolved Individual Star Spots on a Planet-hosting Solar-type Star: Kepler-17}}\\
 Namekata, K, {\bf Davenport,  J.R.A.}, et~al. {\em ApJ} 891, 103 (2020)
 
 %%% 2019
 
-\item{\sc \href{https://arxiv.org/abs/1910.08458}{\color{blue} A blueprint of state-of-the-art techniques for detecting quasi-periodic pulsations in solar and stellar flares}}\\
+\item{\sc \href{https://arxiv.org/abs/1910.08458}{\color{NavyBlue} A blueprint of state-of-the-art techniques for detecting quasi-periodic pulsations in solar and stellar flares}}\\
 Broomhall, A-M, {\bf Davenport,  J.R.A.}, et~al. {\em ApJS} 244, 44 (2019)
 
-\item{\sc \href{https://doi.org/10.3847/2515-5172/ab45a0}{\color{blue}Using Flare Rates to Search for Stellar Activity Cycles}}\\
+\item{\sc \href{https://doi.org/10.3847/2515-5172/ab45a0}{\color{NavyBlue}Using Flare Rates to Search for Stellar Activity Cycles}}\\
 Scoggins, M., {\bf Davenport, J.R.A.}, Covey, K.R., {\em RNAAS} 3, 137 (2019)
 
 
-\item{\sc\href{http://arxiv.org/abs/1907.10113}{\color{blue}High Fidelity Imaging of the Inner AU Mic Debris Disk: Evidence of Differential Wind Sculpting?}}\\
+\item{\sc\href{http://arxiv.org/abs/1907.10113}{\color{NavyBlue}High Fidelity Imaging of the Inner AU Mic Debris Disk: Evidence of Differential Wind Sculpting?}}\\
 Wisniewski, J. P., Kowalski, A. F., {\bf Davenport,  J.R.A.}, et~al.{\em ApJL} 883, 8 (2019)
 
-\item{\sc\href{https://arxiv.org/abs/1904.00142}{\color{blue}Do Kepler superflare stars really include slowly-rotating Sun-like stars? -- Results using APO 3.5m telescope spectroscopic observations and Gaia-DR2 data }}\\
+\item{\sc\href{https://arxiv.org/abs/1904.00142}{\color{NavyBlue}Do Kepler superflare stars really include slowly-rotating Sun-like stars? -- Results using APO 3.5m telescope spectroscopic observations and Gaia-DR2 data }}\\
 Notsu, Y., {\bf et~al.} {\em ApJ} 876, 58 (2019)
 
-\item{\sc\href{https://arxiv.org/abs/1903.05686}{\color{blue}Rotation Period Evolution in Low-Mass Binary Stars: The Impact of Tidal Torques and Magnetic Braking}}\\
+\item{\sc\href{https://arxiv.org/abs/1903.05686}{\color{NavyBlue}Rotation Period Evolution in Low-Mass Binary Stars: The Impact of Tidal Torques and Magnetic Braking}}\\
 Fleming, D. P., Barnes, R., {\bf Davenport, J.R.A.}, Luger, R., {\em ApJ} 881, 88 (2019)
 
 
-\item{\sc\href{https://arxiv.org/abs/1901.09930}{\color{blue}Short Term Variability of Evolved Massive Stars with TESS}}\\
+\item{\sc\href{https://arxiv.org/abs/1901.09930}{\color{NavyBlue}Short Term Variability of Evolved Massive Stars with TESS}}\\
 Dorn-Wallenstein, T. Z., Levesque, E. M., \& {\bf Davenport, J.R.A.}, {\em ApJ} 878, 155 (2019)
 
-\item{\sc\href{https://arxiv.org/abs/1901.04557}{\color{blue}The Solar Benchmark: Rotational Modulation of the Sun Reconstructed from Archival Sunspot Records}}\\
+\item{\sc\href{https://arxiv.org/abs/1901.04557}{\color{NavyBlue}The Solar Benchmark: Rotational Modulation of the Sun Reconstructed from Archival Sunspot Records}}\\
 Morris, B.~M. {\bf Davenport, J.R.A.} et~al. {\em MNRAS} 484, 3244 (2019)
 
 
 %%% 2018
 
-\item{\sc\href{https://arxiv.org/abs/1812.06725}{\color{blue}Flares in Open Clusters with K2. I. M45 (Pleiades), M44 (Praesepe) and M67}}\\
+\item{\sc\href{https://arxiv.org/abs/1812.06725}{\color{NavyBlue}Flares in Open Clusters with K2. I. M45 (Pleiades), M44 (Praesepe) and M67}}\\
 Ilin, E. {\bf et~al.}{\em A\&A} in press (2018)
 
-\item{\sc\href{https://arxiv.org/abs/1807.11500}{\color{blue}A Significant Over-Luminosity in the Transiting Brown Dwarf CWW 89Ab}}\\
+\item{\sc\href{https://arxiv.org/abs/1807.11500}{\color{NavyBlue}A Significant Over-Luminosity in the Transiting Brown Dwarf CWW 89Ab}}\\
 Beatty, T.~G. {\bf et~al.}{\em AJ} 156, 168 (2018)
 
-\item{\href{http://www.astronomerstelegram.org/?read=11745}{\color{blue}{\sc ZTF Bright Transient Survey classifications}}}\\
+\item{\href{http://www.astronomerstelegram.org/?read=11745}{\color{NavyBlue}{\sc ZTF Bright Transient Survey classifications}}}\\
 Graham, M.~L. {\bf et~al.}, {\em ATEL}, 11745 (2018)
 
 
-\item{\sc \href{https://arxiv.org/abs/1803.04543}{\color{blue}Possible Bright Starspots on TRAPPIST-1}}\\
+\item{\sc \href{https://arxiv.org/abs/1803.04543}{\color{NavyBlue}Possible Bright Starspots on TRAPPIST-1}}\\
 Morris, B.~M. {\bf et~al.}{\em ApJ} 857, 39 (2018)
 
 
-\item{\sc \href{https://arxiv.org/abs/1802.09943}{\color{blue}Spotting Stellar Activity Cycles in Gaia Astrometry}}\\
+\item{\sc \href{https://arxiv.org/abs/1802.09943}{\color{NavyBlue}Spotting Stellar Activity Cycles in Gaia Astrometry}}\\
 Morris, B.~M. {\bf et~al.}{\em MNRAS} 476, 5408 (2018)
 
 
-\item{\sc \href{https://arxiv.org/abs/1801.00732}{\color{blue}The First Post-Kepler Brightness Dips of KIC 8462852}}\\
+\item{\sc \href{https://arxiv.org/abs/1801.00732}{\color{NavyBlue}The First Post-Kepler Brightness Dips of KIC 8462852}}\\
 Boyajian, T.~S. {\bf et~al.}{\em ApJL} 853, 8 (2018)
 
 
-\item{\sc \href{https://arxiv.org/abs/1712.04570}{\color{blue}Flare Activity of Wide Binary Stars with Kepler}}\\
+\item{\sc \href{https://arxiv.org/abs/1712.04570}{\color{NavyBlue}Flare Activity of Wide Binary Stars with Kepler}}\\
 Clarke, R.~W., {\bf Davenport, J.R.A.}, et~al., {\em ApJ} 853, 59 (2018)
 
 %%% 2017
 
-\item\href{https://www.nature.com/articles/s41550-017-0153}{\color{blue}{\sc Who asks questions at astronomy meetings?}}\\ 
+\item\href{https://www.nature.com/articles/s41550-017-0153}{\color{NavyBlue}{\sc Who asks questions at astronomy meetings?}}\\ 
 Schmidt, S. J., \& {\bf Davenport, J.R.A.}, Nature Astronomy 1, 0153 (2017)
 
-\item{\sc \href{https://arxiv.org/abs/1711.08484}{\color{blue} Modeling Repeated M-dwarf Flaring at an Earth-like Planet in the Habitable Zone: Atmospheric Effects for an Unmagnetized Planet}}\\
+\item{\sc \href{https://arxiv.org/abs/1711.08484}{\color{NavyBlue} Modeling Repeated M-dwarf Flaring at an Earth-like Planet in the Habitable Zone: Atmospheric Effects for an Unmagnetized Planet}}\\
 Tilley, M.~A. {\bf et~al.} {\em Astrobiology} (2018)
 
-\item{\sc \href{https://arxiv.org/abs/1709.03913}{\color{blue} Chromospheric Activity of HAT-P-11: an Unusually Active Planet-Hosting K Star}}\\
+\item{\sc \href{https://arxiv.org/abs/1709.03913}{\color{NavyBlue} Chromospheric Activity of HAT-P-11: an Unusually Active Planet-Hosting K Star}}\\
 Morris, B.~M., {\bf et~al.} {\em ApJ} 848, 58 (2017)
 
-\item\href{https://arxiv.org/abs/1704.05260}{\color{blue}{\sc The Role of Gender in Asking Questions at Cool Stars 18 and 19}}\\ 
+\item\href{https://arxiv.org/abs/1704.05260}{\color{NavyBlue}{\sc The Role of Gender in Asking Questions at Cool Stars 18 and 19}}\\ 
 Schmidt, S. J., {\bf et~al.} (2017) arXiv \#1704.05260
 
-\item{\sc \href{https://arxiv.org/abs/1710.07339}{\color{blue}Tidal Synchronization and Differential Rotation of Kepler Eclipsing Binaries}}\\ Lurie, J.~C., {\bf et~al.} {\em AJ} 154, 250 (2017)
+\item{\sc \href{https://arxiv.org/abs/1710.07339}{\color{NavyBlue}Tidal Synchronization and Differential Rotation of Kepler Eclipsing Binaries}}\\ Lurie, J.~C., {\bf et~al.} {\em AJ} 154, 250 (2017)
 
-\item{\sc \href{https://arxiv.org/abs/1708.02583}{\color{blue}The Starspots of Hat-P-11: Evidence for a Solar-Like Dynamo}} \\ Morris, B.~M., {\bf et~al.} {\em ApJ} 846, 99 (2017)
+\item{\sc \href{https://arxiv.org/abs/1708.02583}{\color{NavyBlue}The Starspots of Hat-P-11: Evidence for a Solar-Like Dynamo}} \\ Morris, B.~M., {\bf et~al.} {\em ApJ} 846, 99 (2017)
 
-\item{\sc \href{https://arxiv.org/abs/1702.01797}{\color{blue}Orbiting Clouds of Material at the Keplerian Co-Rotation Radius of Rapidly Rotating Low Mass WTTs in Upper Sco}} \\
+\item{\sc \href{https://arxiv.org/abs/1702.01797}{\color{NavyBlue}Orbiting Clouds of Material at the Keplerian Co-Rotation Radius of Rapidly Rotating Low Mass WTTs in Upper Sco}} \\
 Stauffer, J. {\bf et~al.} (2017) {\em AJ}, 153, 152 (2017)
 
-\item{\sc \href{http://arxiv.org/abs/1609.08718}{\color{blue}No Conclusive Evidence For Transits Of Proxima B In MOST Photometry;}} \\  Kipping, D.~M. {\bf et~al.} {\em AJ}, 153, 93 (2017)
+\item{\sc \href{http://arxiv.org/abs/1609.08718}{\color{NavyBlue}No Conclusive Evidence For Transits Of Proxima B In MOST Photometry;}} \\  Kipping, D.~M. {\bf et~al.} {\em AJ}, 153, 93 (2017)
 
 %%% 2016
-\item{\sc \href{http://arxiv.org/abs/1607.03886}{\color{blue}Kepler Flares IV: A Comprehensive Analysis of the Activity of GJ 1243}};\\ Silverberg, S.~M., {\bf et~al.}, {\em ApJ}, 829, 129, (2016)
+\item{\sc \href{http://arxiv.org/abs/1607.03886}{\color{NavyBlue}Kepler Flares IV: A Comprehensive Analysis of the Activity of GJ 1243}};\\ Silverberg, S.~M., {\bf et~al.}, {\em ApJ}, 829, 129, (2016)
 
-\item{\sc\href{http://arxiv.org/abs/1607.04302}{\color{blue}{\sc Maximizing Science in the Era of LSST, Stars Study Group Report: Rotation and \\Magnetic Activity in the Galactic Field Population and in Open Star Clusters}}}\\
+\item{\sc\href{http://arxiv.org/abs/1607.04302}{\color{NavyBlue}{\sc Maximizing Science in the Era of LSST, Stars Study Group Report: Rotation and \\Magnetic Activity in the Galactic Field Population and in Open Star Clusters}}}\\
 Hawley, S.L, {\bf et~al.} (2016) Kavli Workshop White Paper
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2016MNRAS.460.2611S}{\color{blue}Examining the relationships between colour, $T_{eff}$, and [M/H] for APOGEE K and M dwarfs}};\\ Schmidt, S.~J. {\bf et~al.}, {\em MNRAS}, 460, 2611 (2016)
+\item{\sc \href{http://adsabs.harvard.edu/abs/2016MNRAS.460.2611S}{\color{NavyBlue}Examining the relationships between colour, $T_{eff}$, and [M/H] for APOGEE K and M dwarfs}};\\ Schmidt, S.~J. {\bf et~al.}, {\em MNRAS}, 460, 2611 (2016)
 
-\item{\sc \href{http://arxiv.org/abs/1602.02752}{\color{blue}The Time-Domain Spectroscopic Survey: Understanding the Optically Variable Sky with SEQUELS in SDSS-III}};\\ Ruan, J.~J. {\bf et~al.}, {\em ApJ} 825, 137 (2016)
+\item{\sc \href{http://arxiv.org/abs/1602.02752}{\color{NavyBlue}The Time-Domain Spectroscopic Survey: Understanding the Optically Variable Sky with SEQUELS in SDSS-III}};\\ Ruan, J.~J. {\bf et~al.}, {\em ApJ} 825, 137 (2016)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2016ApJ...820...89F}{\color{blue}The MUSCLES Treasury Survey I: Motivation and Overview}};\\ France, K., {\bf et~al.}, {\em ApJ}, 820, 89 (2016)
+\item{\sc \href{http://adsabs.harvard.edu/abs/2016ApJ...820...89F}{\color{NavyBlue}The MUSCLES Treasury Survey I: Motivation and Overview}};\\ France, K., {\bf et~al.}, {\em ApJ}, 820, 89 (2016)
 
 %%% 2015
-\item{\sc \href{http://arxiv.org/abs/1509.00128}{\color{blue}Characterizing the Rigidly Rotating Magnetosphere Stars HD 345439 and HD 23478}};\\
+\item{\sc \href{http://arxiv.org/abs/1509.00128}{\color{NavyBlue}Characterizing the Rigidly Rotating Magnetosphere Stars HD 345439 and HD 23478}};\\
 Wisniewski, J.~P., {\bf et~al.}, {\em ApJL}, 811, 26 (2015)
 
-\item{\sc \href{http://arxiv.org/abs/1505.00760}{\color{blue}The Time Domain Spectroscopic Survey: Variable Object Selection and\\ Anticipated Results}};\\
+\item{\sc \href{http://arxiv.org/abs/1505.00760}{\color{NavyBlue}The Time Domain Spectroscopic Survey: Variable Object Selection and\\ Anticipated Results}};\\
 Morganson, E., {\bf et~al.}, {\em ApJ}, 806, 244 (2015)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2015arXiv150100963A}{\color{blue}The Eleventh and Twelfth Data Releases of the Sloan Digital Sky Survey: \\ Final Data from SDSS-III}}; \\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2015arXiv150100963A}{\color{NavyBlue}The Eleventh and Twelfth Data Releases of the Sloan Digital Sky Survey: \\ Final Data from SDSS-III}}; \\
 Alam, S., {\bf et al.}, {\em ApJS}, 219, 12 (2015)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2015MNRAS.450.3211A}{\color{blue}Testing the recovery of stellar rotation signals from Kepler light curves using\\ a blind hare-and-hounds exercise}};\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2015MNRAS.450.3211A}{\color{NavyBlue}Testing the recovery of stellar rotation signals from Kepler light curves using\\ a blind hare-and-hounds exercise}};\\
 Aigrain, S., {\bf et~al.}, {\em MNRAS}, 450, 3211 (2015)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2015AJ....149..158S}{\color{blue}BOSS Ultracool Dwarfs I: Colors and Magnetic Activity of M and L dwarfs}};\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2015AJ....149..158S}{\color{NavyBlue}BOSS Ultracool Dwarfs I: Colors and Magnetic Activity of M and L dwarfs}};\\
 Schmidt, S.~J., {\bf et~al.}, {\em AJ}, 149, 158 (2015)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2015ApJ...800...95L}{\color{blue}Kepler Flares III: Stellar Activity on GJ 1245 A and B}};\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2015ApJ...800...95L}{\color{NavyBlue}Kepler Flares III: Stellar Activity on GJ 1245 A and B}};\\
 Lurie, J.~C., {\bf Davenport, J.R.A.}, Hawley, S.~L., et~al., {\em ApJ}, 800, 95 (2015)
 
 %%% 2014
-\item{\sc \href{http://adsabs.harvard.edu/abs/2014PASP..126.1081G}{\color{blue}H$\alpha$ Emission From Active Equal-mass, Wide M Dwarf Binaries}};\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2014PASP..126.1081G}{\color{NavyBlue}H$\alpha$ Emission From Active Equal-mass, Wide M Dwarf Binaries}};\\
 Gunning, H.~C., Schmidt, S.~J, {\bf Davenport, J.R.A.} et~al., {\em PASP}, 126, 108 (2014)
 
-\item{\sc \href{http://arxiv.org/abs/1410.7779}{\color{blue}Kepler Flares I: Active and Inactive M dwarfs}};\\
+\item{\sc \href{http://arxiv.org/abs/1410.7779}{\color{NavyBlue}Kepler Flares I: Active and Inactive M dwarfs}};\\
 Hawley, S.~L., {\bf Davenport, J.R.A.} et~al., {\em ApJ}, 797, 121 (2014)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2014ApJ...784L..30E}{\color{blue}Discovery of Two Rare Rigidly-Rotating Magnetosphere Stars in the APOGEE Survey}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2014ApJ...784L..30E}{\color{NavyBlue}Discovery of Two Rare Rigidly-Rotating Magnetosphere Stars in the APOGEE Survey}};\\
 Eikenberry, S.~S., {\bf et~al.}, {\em ApJL}, 748, 30 (2014)
 
 %%% 2013
-\item {\sc \href{http://adsabs.harvard.edu/abs/2014ApJ...780...92S}{\color{blue}High-Precision 2MASS $JHK_s$ Light Curves and Other Data for RR Lyrae Star SDSSJ 015450+001501: Strong Constraints for Non-Linear Pulsation Models}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2014ApJ...780...92S}{\color{NavyBlue}High-Precision 2MASS $JHK_s$ Light Curves and Other Data for RR Lyrae Star SDSSJ 015450+001501: Strong Constraints for Non-Linear Pulsation Models}};\\
 Szab\'{o}, R., {\bf et~al.}, {\em ApJ}, 780, 92 (2013)
 
-\item{\sc \href{http://adsabs.harvard.edu/abs/2013ApJS..207...15K}{\color{blue}Time-resolved Properties and Global Trends in dMe Flares from Simultaneous Photometry and Spectra}};\\
+\item{\sc \href{http://adsabs.harvard.edu/abs/2013ApJS..207...15K}{\color{NavyBlue}Time-resolved Properties and Global Trends in dMe Flares from Simultaneous Photometry and Spectra}};\\
 Kowalski, A.~K., {\bf et~al.}, {\em ApJS}, 207, 15 (2013)
 
-\item {\sc\href{http://adsabs.harvard.edu/abs/2013AJ....146...32S}{\color{blue}The Multi-object, Fiber-fed Spectrographs for the Sloan Digital Sky Survey and the Baryon Oscillation Spectroscopic Survey}};\\
+\item {\sc\href{http://adsabs.harvard.edu/abs/2013AJ....146...32S}{\color{NavyBlue}The Multi-object, Fiber-fed Spectrographs for the Sloan Digital Sky Survey and the Baryon Oscillation Spectroscopic Survey}};\\
 Smee, S.~A., {\bf et~al.}, {\em AJ}, 146, 32 (2013)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2013AJ....145...10D}{\color{blue}The Baryon Oscillation Spectroscopic Survey of SDSS-III}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2013AJ....145...10D}{\color{NavyBlue}The Baryon Oscillation Spectroscopic Survey of SDSS-III}};\\
 Dawson, K., {\bf et~al.}, {\em AJ}, 145, 10 (2013)
 
 %%% 2012
-\item {\sc \href{http://adsabs.harvard.edu/abs/2012ApJS..203...21A}{\color{blue}The Ninth Data Release of the Sloan Digital Sky Survey: First Spectroscopic Data from the SDSS-III Baryon Oscillation Spectroscopic Survey}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2012ApJS..203...21A}{\color{NavyBlue}The Ninth Data Release of the Sloan Digital Sky Survey: First Spectroscopic Data from the SDSS-III Baryon Oscillation Spectroscopic Survey}};\\
 Ahn, C. P.,  {\bf et~al.}, {\em ApJS}, 203, 21 (2012)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2012ApJ...760...51R}{\color{blue}Characterizing the Optical Variability of Bright Blazars: Variability-based Selection of Fermi Active Galactic Nuclei}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2012ApJ...760...51R}{\color{NavyBlue}Characterizing the Optical Variability of Bright Blazars: Variability-based Selection of Fermi Active Galactic Nuclei}};\\
 Ruan, J.~J., {\bf et~al.}, {\em ApJ}, 760, 51 (2012)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2012AJ....143..103S}{\color{blue}A Multi-survey Approach to White Dwarf Discovery}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2012AJ....143..103S}{\color{NavyBlue}A Multi-survey Approach to White Dwarf Discovery}};\\
 Sayres, C., {\bf et~al.}, {\em AJ}, 143, 103 (2012)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2012PASP..124...14B}{\color{blue}H$\alpha$ Emission Variability in Active M Dwarfs}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2012PASP..124...14B}{\color{NavyBlue}H$\alpha$ Emission Variability in Active M Dwarfs}};\\
 Bell, K.~J.; Hilton, E.J.; {\bf Davenport, J.R.A.}; et~al. {\em PASP}, 124, 14 (2012)
 
 %%% 2011
-\item {\sc \href{http://adsabs.harvard.edu/abs/2011AJ....142...72E}{\color{blue}SDSS-III: Massive Spectroscopic Surveys of the Distant Universe, the Milky Way Galaxy, and Extra-Solar Planetary Systems}};\\ 
+\item {\sc \href{http://adsabs.harvard.edu/abs/2011AJ....142...72E}{\color{NavyBlue}SDSS-III: Massive Spectroscopic Surveys of the Distant Universe, the Milky Way Galaxy, and Extra-Solar Planetary Systems}};\\ 
 Eisenstein, D.~J., {\bf et~al.} {\em AJ}, 142, 72 (2011)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2011ApJS..193...29A}{\color{blue}The Eighth Data Release of the Sloan Digital Sky Survey: First Data from SDSS-III}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2011ApJS..193...29A}{\color{NavyBlue}The Eighth Data Release of the Sloan Digital Sky Survey: First Data from SDSS-III}};\\
 Aihara, H., {\bf et~al.}, {\em ApJS}, 193, 29 (2011)
 
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2011AJ....141...97W}{\color{blue}The Sloan Digital Sky Survey DR7 Spectroscopic M Dwarf Catalog. I: Data}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2011AJ....141...97W}{\color{NavyBlue}The Sloan Digital Sky Survey DR7 Spectroscopic M Dwarf Catalog. I: Data}};\\
 West, A.~A., {\bf et~al.}, {\em AJ} 141, 97 (2011)
 
 %%% 2010
-\item{\sc\href{http://adsabs.harvard.edu/abs/2011ASPC..448.1077B}{\color{blue}The Number of Rotations per Stellar Activity Cycle in G and K Main Sequence Stars}};
+\item{\sc\href{http://adsabs.harvard.edu/abs/2011ASPC..448.1077B}{\color{NavyBlue}The Number of Rotations per Stellar Activity Cycle in G and K Main Sequence Stars}};
 Erika B\"ohm-Vitense \& {\bf J.R.A.~Davenport}\\
 {\em Cool Stars 16 Conference, 2010 (Seattle, WA)}
 
 %%% 2009
-\item {\sc \href{http://adsabs.harvard.edu/abs/2009ApJS..182..543A}{\color{blue}The Seventh Data Release of the Sloan Digital Sky Survey}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2009ApJS..182..543A}{\color{NavyBlue}The Seventh Data Release of the Sloan Digital Sky Survey}};\\
 Abazajian, K.~N. {\bf et~al.}, {\em ApJS}, 182, 543 (2009)
 
 %%% 2008
-\item {\sc \href{http://adsabs.harvard.edu/abs/2008AJ....136.1778C}{\color{blue}The Luminosity and Mass Functions of Low-Mass Stars in the Galactic Disk: I. The Calibration Region}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2008AJ....136.1778C}{\color{NavyBlue}The Luminosity and Mass Functions of Low-Mass Stars in the Galactic Disk: I. The Calibration Region}};\\
 Covey, K.~R., {\bf et~al.}, {\em AJ}, 136, 1778 (2008)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2008PASP..120..374S}{\color{blue}Time-Resolved Photometry of the Optical Counterpart of Swift J2319.4+2619}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2008PASP..120..374S}{\color{NavyBlue}Time-Resolved Photometry of the Optical Counterpart of Swift J2319.4+2619}};\\
 Shafter, A.~W., {\bf Davenport, J.R.A.}, et~al., {\em PASP}, 120, 374-379, (2008)
 
-\item {\sc \href{http://adsabs.harvard.edu/abs/2008ApJS..175..297A}{\color{blue}The Sixth Data Release of the Sloan Digital Sky Survey}};\\
+\item {\sc \href{http://adsabs.harvard.edu/abs/2008ApJS..175..297A}{\color{NavyBlue}The Sixth Data Release of the Sloan Digital Sky Survey}};\\
 Adelman-McCarthy, J.~K, {\bf et~al.}, {\em ApJS}, 175, 297-313 (2008)
   
 \end{etaremune}
@@ -713,7 +798,7 @@ Adelman-McCarthy, J.~K, {\bf et~al.}, {\em ApJS}, 175, 297-313 (2008)
 %{\bf Davenpot, J.R.A.}, Angus, R., Covey, K.R., Kipping, D., Ag\u{u}eros, M.\\
 %{\em Cool Stars 20 Conference, 2018 (Boston, MA)}
 %
-%{\sc \href{https://speakerdeck.com/jradavenport/seti-with-ztf-and-lsst}{\color{blue} SETI with ZTF and LSST}}\\
+%{\sc \href{https://speakerdeck.com/jradavenport/seti-with-ztf-and-lsst}{\color{NavyBlue} SETI with ZTF and LSST}}\\
 %{\bf Davenport, J.R.A}\\
 %{\em VASCO-I Workshop, 2018 (Uppsala, Sweden)}
 %
@@ -723,7 +808,7 @@ Adelman-McCarthy, J.~K, {\bf et~al.}, {\em ApJS}, 175, 297-313 (2008)
 %{\em 231st AAS Conference, 2018 (Washington, DC)}
 %
 %
-%{\sc \href{https://speakerdeck.com/jradavenport/exoplanets-around-flare-stars}{\color{blue} Exoplanets Around Flare Stars}}\\
+%{\sc \href{https://speakerdeck.com/jradavenport/exoplanets-around-flare-stars}{\color{NavyBlue} Exoplanets Around Flare Stars}}\\
 %{\bf Davenport, J.R.A}\\
 %{\em Know thy Star, Know thy Planet Meeting, 2017 (Pasadena, CA)}
 %
@@ -759,7 +844,7 @@ Adelman-McCarthy, J.~K, {\bf et~al.}, {\em ApJS}, 175, 297-313 (2008)
 %{\sc Talk: The Shape of M Dwarf Flares in Kepler Light Curves}\\
 %{\bf Davenport, J.R.A}\\
 %{\em Presentation \# 8.04, IAUS 320, 2015 (Honolulu, HI)}\\
-%\href{http://arxiv.org/abs/1510.05695}{\color{blue}arXiv \#1510.05695}
+%\href{http://arxiv.org/abs/1510.05695}{\color{NavyBlue}arXiv \#1510.05695}
 %
 %
 %{\sc Talk: Using Transiting Exoplanets to Study Starspots with Kepler}\\
@@ -777,7 +862,7 @@ Adelman-McCarthy, J.~K, {\bf et~al.}, {\em ApJS}, 175, 297-313 (2008)
 %{\sc Talk: Using Transiting Planets to Model Starspot Evolution}\\
 %{\bf Davenport, J.R.A}; Hebb, L.; Hawley, S.L.\\
 %{\em Cool Stars 18 Conference, 2014 (Flagstaff, AZ)}\\
-% \href{http://arxiv.org/abs/1408.5201}{\color{blue}arXiv \#1408.5201}
+% \href{http://arxiv.org/abs/1408.5201}{\color{NavyBlue}arXiv \#1408.5201}
 %
 %{\sc Talk: Tracing Detailed Starspot Evolution with Kepler}\\
 %{\bf Davenport, J.R.A}; Hebb, L.; Hawley, S.L.\\
